@@ -1,0 +1,69 @@
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #007bff;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* caixa principal */
+.container{
+    background:white;
+    padding:40px;
+    width:400px;
+    border-radius:15px;
+    border: 1px solid #ccc;
+    text-align:center;
+    animation: aparecer 0.5s ease;
+}
+}
+
+/* titulo */
+h1{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* frase */
+p{
+    font-size:22px;
+    color:#555;
+    margin:30px 0;
+    font-style:italic;
+
+    }
+}
+
+/* botão legal */
+button{
+padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff7e5f 0%, #ff5733 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 127, 95, 0.3);
+}
+
+/* efeito hover no botao*/
+button:hover{
+    transform: translateY(-2px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* animação ao clicar*/
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
